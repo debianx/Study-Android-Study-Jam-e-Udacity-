@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnJSONRequest;
+       // Button btnJSONRequest;
         Button btnGSONRequest;
         final TextView txtDisplay;
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             //    (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
 
-        final GsonRequest gsonRequest = new GsonRequest(url, Versions.class, null, new Response.Listener<Versions>() {
+        final GsonRequest gsonRequest = new GsonRequest(url, Versions.class, null, new Response.Listener<Versions>(){
             @Override
             public void onResponse(Versions versions) {
                 String textResult = "";
